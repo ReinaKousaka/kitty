@@ -21,6 +21,8 @@ BINDINGS = {
     "kitty_mod+t":  ("new_tab_with_cwd",                       "c"),   # new tmux window
     "ctrl+page_up":   ("previous_tab",                         "p"),   # previous tmux window
     "ctrl+page_down": ("next_tab",                             "n"),   # next tmux window
+    "kitty_mod+,":    ("move_tab_backward",                    "<"),   # move tmux window left (needs tmux.conf)
+    "kitty_mod+.":    ("move_tab_forward",                     ">"),   # move tmux window right (needs tmux.conf)
 }
 
 for key, (kitty_action, tmux_key) in BINDINGS.items():
