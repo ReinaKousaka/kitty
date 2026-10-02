@@ -12,6 +12,8 @@ BINDINGS = {
     "ctrl+shift+0": ("launch --location=hsplit --cwd=current", '"'),   # top / bottom
     "ctrl+shift+z": ("toggle_layout stack",                    "z"),   # zoom pane
     "ctrl+shift+w": ("close_window",                           "x"),   # close pane (tmux asks y/n)
+    "ctrl+shift+f": ("move_window_forward",                    "}"),   # swap pane with next
+    "ctrl+shift+b": ("move_window_backward",                   "{"),   # swap pane with previous
     "alt+left":     ("neighboring_window left",                LEFT),
     "alt+right":    ("neighboring_window right",               RIGHT),
     "alt+up":       ("neighboring_window up",                  UP),
